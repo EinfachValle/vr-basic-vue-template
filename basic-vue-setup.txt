@@ -1,0 +1,17 @@
+install:
+vue-cli
+
+npm i -g @vue/cli
+
+init:
+
+vue create <app-name>
+
+dependecies:
+
+npm i --save @vueuse/core @vue/babel-preset-app axios bootstrap bootstrap-icons bootstrap-vue browserslist core-js crypto-browserify dot-object file-uri-to-path i18n ioredis jquery js-logger lint-staged moment moment-timezone validator vue vue-fuse vue-i18n vue-i18n-bridge vue-i18n-routing vue-loading-overlay vue-moment vue-router vuex
+
+
+dev-dependecies:
+
+npm i --save-dev @babel/core @babel/eslint-parser @intlify/vue-i18n-loader @vue/cli-plugin-babel @vue/cli-plugin-eslint @vue/cli-plugin-router @vue/cli-plugin-vuex @vue/cli-service @vue/eslint-config-standard babel-eslint css-loader eslint eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-vue husky jest mini-css-extract-plugin moment-timezone-data-webpack-plugin sass sass-loader style-loader vue-cli-plugin-i18n vue-loader vue-template-compiler webpack webpack-cli webpack-dev-middleware webpack-hot-middleware
