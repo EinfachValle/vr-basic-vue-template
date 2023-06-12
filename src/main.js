@@ -1,14 +1,14 @@
-import './assets/main.css'
+import { createPinia } from 'pinia';
+import { createApp } from 'vue';
+import App from './app/App.vue';
+import router from './router';
+import log from 'js-logger';
+import moment from 'moment-timezone';
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+const app = createApp(App);
+app.use(moment)
+app.use(router);
+app.use(createPinia());
+app.mount('#app');
 
-import App from './App.vue'
-import router from './router'
-
-const app = createApp(App)
-
-app.use(createPinia())
-app.use(router)
-
-app.mount('#app')
+log.useDefaults();
